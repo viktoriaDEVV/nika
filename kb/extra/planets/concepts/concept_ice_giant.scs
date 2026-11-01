@@ -1,0 +1,14 @@
+concept_ice_giant
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+<- concept_planet;
+=> nrel_main_idtf:
+	[Ледяной гигант]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Ice giant]
+	(* <- lang_en;; *);
+=> nrel_note: [планета, в составе которой преобладают летучие вещества — вода, аммиак и метан](* <- lang_ru;; *);
+<= nrel_inclusion: concept_planet;;
+

@@ -2,7 +2,7 @@
 <GWF version="2.0">
     <staticSector>
         <node type="node/var/perm/general" idtf="" shapeColor="0" id="109040958557296" parent="109040958600944" x="543.367" y="317.5" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Открой в документации ceph раздел install.]]></content>
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Я тебя люблю.]]></content>
         </node>
         <node type="node/var/perm/general" idtf="_message" shapeColor="0" id="109040957173888" parent="109040958600944" left="0" top="0" right="67.125" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="193.367" y="366.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>

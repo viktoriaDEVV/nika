@@ -1,8 +1,0 @@
-concept_message_without_reply
-<- sc_node_class;
-<= nrel_inclusion: concept_message;
-=> nrel_main_idtf:
-	[сообщение без ответа]
-	(* <- lang_ru;; *);
-	[message without reply]
-	(* <- lang_en;; *);;

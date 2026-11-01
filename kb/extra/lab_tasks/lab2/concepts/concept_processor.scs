@@ -1,8 +1,0 @@
-concept_processor
-<- sc_node_class;
-<- concept_wit_entity;
-=> nrel_main_idtf:
-	[процессор]
-	(* <- lang_ru;; *);
-	[processor]
-	(* <- lang_en;; *);;

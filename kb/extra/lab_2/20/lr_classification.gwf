@@ -4,7 +4,7 @@
         <node type="node/const/perm/group" idtf="concept_message_about_entity" shapeColor="0" id="54398382080" parent="54410738688" left="0" top="0" right="193.469" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="142.067" y="540.5" haveBus="false" idtf_pos="5">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="sistine" shapeColor="0" id="54398384960" parent="54410738688" left="0" top="0" right="37.4531" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="322.067" y="681.5" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="venus" shapeColor="0" id="54398384960" parent="54410738688" left="0" top="0" right="37.4531" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="322.067" y="681.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/var/perm/general" idtf="_message" shapeColor="0" id="54398385280" parent="54410738688" left="0" top="0" right="59.2344" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="145.067" y="681.5" haveBus="false" idtf_pos="0">
@@ -31,7 +31,7 @@
             </points>
         </contour>
         <node type="node/var/perm/general" idtf="" shapeColor="0" id="54398386240" parent="54410729728" x="367.067" y="305.5" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Что такое Сикстинская?]]></content>
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Что такое Венера?]]></content>
         </node>
         <node type="node/var/perm/general" idtf="_message" shapeColor="0" id="54398387840" parent="54410729728" left="0" top="0" right="59.2344" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="116.067" y="307.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
@@ -68,7 +68,7 @@
         <node type="node/const/perm/role" idtf="rrel_main_key_sc_element" shapeColor="193" id="54405169536" parent="0" left="0" top="0" right="152.016" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="334.082" y="491.973" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="lr_classify_what_is_sistine" shapeColor="0" id="54405170176" parent="0" left="0" top="0" right="207.172" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="423.067" y="439.5" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="lr_classify_what_is_venus" shapeColor="0" id="54405170176" parent="0" left="0" top="0" right="207.172" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="423.067" y="439.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/group" idtf="concept_classify_message_rule_priority_1" shapeColor="0" id="54412504128" parent="0" left="0" top="0" right="233.859" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="557.311" y="345.112" haveBus="false" idtf_pos="0">

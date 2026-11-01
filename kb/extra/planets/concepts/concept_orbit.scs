@@ -1,0 +1,12 @@
+concept_orbit
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Орбита]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Orbit]
+	(* <- lang_en;; *);
+=> nrel_note: [траектория движения небесного тела в гравитационном поле другого тела](* <- lang_ru;; *);;
+

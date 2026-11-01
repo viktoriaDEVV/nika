@@ -1,7 +1,0 @@
-marble
-<- concept_material;
-=> nrel_main_idtf:
-    [Мрамор](* <- lang_ru;; *);
-=> nrel_main_idtf:
-    [Marble](* <- lang_en;; *);
-=> nrel_note: [твёрдый природный камень, часто используемый скульпторами для создания статуй](* <- lang_ru;; *);;

@@ -40,26 +40,21 @@ stop_open_url_watcher() {
 
 sync_kb_to_staging() {
   mkdir -p "$STAGING/kb/extra"
-  rsync -a --delete "$ROOT/kb/extra/art/" "$STAGING/kb/extra/art/"
+  rsync -a --delete "$ROOT/kb/extra/planets/" "$STAGING/kb/extra/planets/"
   rsync -a --delete "$ROOT/kb/extra/lab_2/" "$STAGING/kb/extra/lab_2/"
-  rsync -a --delete "$ROOT/kb/extra/lab_3/" "$STAGING/kb/extra/lab_3/"
   if [ -d "$ROOT/kb/extra/laba" ]; then
     rsync -a --delete "$ROOT/kb/extra/laba/" "$STAGING/kb/extra/laba/"
   fi
-  if [ -d "$ROOT/kb/extra/lab_tasks" ]; then
-    rsync -a --delete "$ROOT/kb/extra/lab_tasks/" "$STAGING/kb/extra/lab_tasks/"
-  fi
+  rm -rf "$STAGING/kb/extra/lab_tasks" "$STAGING/kb/extra/art"
   # C++ modules (new agents). Keep container-built generated/ headers.
   rsync -a --delete \
     --exclude 'generated/' \
     --exclude '*.gen_cache' \
     "$ROOT/problem-solver/cxx/" "$STAGING/problem-solver/cxx/"
   # drop macOS junk / old experiments that break builder
-  find "$STAGING/kb/extra/art" "$STAGING/kb/extra/lab_2" "$STAGING/kb/extra/lab_3" "$STAGING/kb/extra/laba" "$STAGING/kb/extra/lab_tasks" \
+  find "$STAGING/kb/extra/planets" "$STAGING/kb/extra/lab_2" "$STAGING/kb/extra/laba" \
     -name '._*' -delete 2>/dev/null || true
-  rm -f "$STAGING/kb/extra/art/dialog/lr_classify_art_entities.gwf" 2>/dev/null || true
-  rm -rf "$STAGING/kb/extra/art/dialog/classify" 2>/dev/null || true
-  echo "Synced kb/extra/{art,lab_2,lab_3,laba,lab_tasks} + problem-solver/cxx -> .nika-ubuntu-data"
+  echo "Synced kb/extra/{planets,lab_2,laba} + problem-solver/cxx -> .nika-ubuntu-data"
 }
 
 rebuild_kb_in_container() {
@@ -72,6 +67,18 @@ rebuild_kb_in_container() {
     for p in $(pgrep -x sc-server || true); do kill "$p" || true; done
     sleep 2
     ./scripts/build_kb.sh
+  '
+}
+
+rebuild_cxx_in_container() {
+  docker exec nika-ubuntu bash -lc '
+    set -euo pipefail
+    export LD_LIBRARY_PATH=/home/nika/nika_cw/bin:/home/nika/nika_cw/bin/extensions
+    cd /home/nika/nika_cw
+    source scripts/set_vars.sh
+    for p in $(pgrep -x sc-server || true); do kill "$p" || true; done
+    sleep 2
+    ./scripts/build_problem_solver.sh
   '
 }
 
@@ -91,6 +98,13 @@ case "${1:-}" in
     ;;
   sync-kb)
     sync_kb_to_staging
+    ;;
+  rebuild-cxx)
+    sync_kb_to_staging
+    rebuild_cxx_in_container
+    "${COMPOSE[@]}" restart
+    ensure_open_url_watcher
+    echo "C++ agent rebuilt. Wait ~30s, then try: Я тебя люблю."
     ;;
   rebuild-kb)
     # 1) copy sources from repo  2) sc-builder --clear  3) restart stack
@@ -112,7 +126,7 @@ case "${1:-}" in
     curl -s -o /dev/null -w "scweb=%{http_code}\n" http://127.0.0.1:8000/ || true
     ;;
   *)
-    echo "Usage: $0 {up|start|down|stop|restart|sync-kb|rebuild-kb|logs|shell|status}"
+    echo "Usage: $0 {up|start|down|stop|restart|sync-kb|rebuild-kb|rebuild-cxx|logs|shell|status}"
     exit 1
     ;;
 esac

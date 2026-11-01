@@ -1,9 +1,0 @@
-nrel_intersection
-<- sc_node_norole_relation;
-<- relation;
-<- binary_relation;
-=> nrel_main_idtf:
-	[пересечение*]
-	(* <- lang_ru;; *);
-	[intersection*]
-	(* <- lang_en;; *);;

@@ -1,0 +1,12 @@
+concept_magnetosphere
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Магнитосфера]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Magnetosphere]
+	(* <- lang_en;; *);
+=> nrel_note: [область пространства вокруг небесного тела, в которой магнитное поле управляет движением заряженных частиц](* <- lang_ru;; *);;
+

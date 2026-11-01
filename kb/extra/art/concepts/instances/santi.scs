@@ -1,8 +1,0 @@
-santi
-<- concept_artist;
-<- concept_painter;
-=> nrel_main_idtf:
-    [Санти](* <- lang_ru;; *);
-=> nrel_main_idtf:
-    [Santi](* <- lang_en;; *);
-=> nrel_note: [итальянский живописец эпохи Возрождения, автор картины «Сикстинская Madonna»](* <- lang_ru;; *);;

@@ -1,0 +1,17 @@
+earth
+<- concept_planet;
+<- concept_terrestrial_planet;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Земля](* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Earth](* <- lang_en;; *);
+=> nrel_note: [третья планета от Солнца, единственная известная планета, на которой существует жизнь](* <- lang_ru;; *);
+=> nrel_orbits: sun;
+=> nrel_belongs_to_system: solar_system;
+=> nrel_distance_from_sun: [1 а.е.](* <- lang_ru;; *);
+=> nrel_equatorial_diameter: [12756 км](* <- lang_ru;; *);
+=> nrel_number_of_satellites: [1];
+=> nrel_orbital_period: [365,25 суток](* <- lang_ru;; *);
+=> nrel_interesting_fact: [Около 71 % поверхности Земли покрыто водой.](* <- lang_ru;; *);
+=> nrel_preceded: mars;;

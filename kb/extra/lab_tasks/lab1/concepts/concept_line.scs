@@ -1,7 +1,0 @@
-concept_line
-<- sc_node_class;
-=> nrel_main_idtf:
-	[прямая]
-	(* <- lang_ru;; *);
-	[line]
-	(* <- lang_en;; *);;

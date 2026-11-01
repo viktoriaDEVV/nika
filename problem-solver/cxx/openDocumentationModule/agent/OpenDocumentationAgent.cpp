@@ -6,7 +6,6 @@
 #include "keynodes/OpenDocumentationKeynodes.hpp"
 #include "OpenDocumentationAgent.hpp"
 
-#include <cctype>
 #include <cstdlib>
 #include <fstream>
 #include <string>
@@ -53,21 +52,8 @@ SC_AGENT_IMPLEMENTATION(OpenDocumentationAgent)
 
   SC_LOG_INFO("OpenDocumentationAgent: message text = " << name);
 
-  size_t const lastSpacePos = name.find_last_of(' ');
-  std::string lastWord = (lastSpacePos != std::string::npos) ? name.substr(lastSpacePos + 1) : name;
-  while (!lastWord.empty() && std::ispunct(static_cast<unsigned char>(lastWord.back())))
-  {
-    lastWord.pop_back();
-  }
-
-  if (lastWord.empty())
-  {
-    SC_LOG_ERROR("OpenDocumentationAgent: empty documentation section name");
-    utils::AgentUtils::finishAgentWork(&m_memoryCtx, actionAddr, false);
-    return SC_RESULT_ERROR;
-  }
-
-  std::string const url = "https://docs.ceph.com/en/latest/" + lastWord;
+  std::string const url =
+      "https://www.linkedin.com/in/viktoryia-kavalchuk-0b4349361/?isSelfProfile=false";
   SC_LOG_INFO("OpenDocumentationAgent: open url " << url);
 
   {

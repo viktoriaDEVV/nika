@@ -1,0 +1,10 @@
+moon
+<- concept_satellite;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Луна](* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Moon](* <- lang_en;; *);
+=> nrel_note: [единственный естественный спутник Земли](* <- lang_ru;; *);
+=> nrel_satellite_of: earth;
+=> nrel_interesting_fact: [Луна всегда обращена к Земле одной стороной из-за приливного захвата.](* <- lang_ru;; *);;

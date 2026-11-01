@@ -1,0 +1,12 @@
+concept_atmosphere
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Атмосфера]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Atmosphere]
+	(* <- lang_en;; *);
+=> nrel_note: [газовая оболочка небесного тела, удерживаемая гравитацией](* <- lang_ru;; *);;
+

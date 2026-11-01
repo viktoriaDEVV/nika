@@ -1,0 +1,17 @@
+mars
+<- concept_planet;
+<- concept_terrestrial_planet;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Марс](* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Mars](* <- lang_en;; *);
+=> nrel_note: [четвёртая планета от Солнца, красная планета земной группы с разреженной атмосферой](* <- lang_ru;; *);
+=> nrel_orbits: sun;
+=> nrel_belongs_to_system: solar_system;
+=> nrel_distance_from_sun: [1,52 а.е.](* <- lang_ru;; *);
+=> nrel_equatorial_diameter: [6792 км](* <- lang_ru;; *);
+=> nrel_number_of_satellites: [2];
+=> nrel_orbital_period: [687 суток](* <- lang_ru;; *);
+=> nrel_interesting_fact: [На Марсе находится Олимп — самая высокая известная гора Солнечной системы, около 21 км.](* <- lang_ru;; *);
+=> nrel_preceded: jupiter;;

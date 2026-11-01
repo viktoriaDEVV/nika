@@ -1,9 +1,0 @@
-michelangelo
-<- concept_artist;
-<- concept_sculpter;
-=> nrel_main_idtf:
-    [Микеланджело](* <- lang_ru;; *);
-=> nrel_main_idtf:
-    [Michelangelo](* <- lang_en;; *);
-=> nrel_note: [итальянский скульптор, живописец и архитектор эпохи Возрождения, автор статуи «Давид»](* <- lang_ru;; *);;
-

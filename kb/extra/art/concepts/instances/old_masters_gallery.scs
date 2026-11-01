@@ -1,7 +1,0 @@
-old_masters_gallery
-<- concept_museum;
-=> nrel_main_idtf:
-    [Галерея старых мастеров](* <- lang_ru;; *);
-=> nrel_main_idtf:
-    [Old Masters Gallery](* <- lang_en;; *);
-=> nrel_note: [музей в Дрездене, где хранится картина «Сикстинская Madonna»](* <- lang_ru;; *);;

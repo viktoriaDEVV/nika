@@ -1,0 +1,10 @@
+titan
+<- concept_satellite;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Титан](* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Titan](* <- lang_en;; *);
+=> nrel_note: [крупнейший спутник Сатурна, единственный спутник Солнечной системы с плотной атмосферой](* <- lang_ru;; *);
+=> nrel_satellite_of: saturn;
+=> nrel_interesting_fact: [На Титане есть озёра и реки из жидкого метана.](* <- lang_ru;; *);;

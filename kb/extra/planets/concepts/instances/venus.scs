@@ -1,0 +1,17 @@
+venus
+<- concept_planet;
+<- concept_terrestrial_planet;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Венера](* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Venus](* <- lang_en;; *);
+=> nrel_note: [вторая планета от Солнца, сходная с Землёй по размеру, с плотной углекислотной атмосферой](* <- lang_ru;; *);
+=> nrel_orbits: sun;
+=> nrel_belongs_to_system: solar_system;
+=> nrel_distance_from_sun: [0,72 а.е.](* <- lang_ru;; *);
+=> nrel_equatorial_diameter: [12104 км](* <- lang_ru;; *);
+=> nrel_number_of_satellites: [0];
+=> nrel_orbital_period: [225 суток](* <- lang_ru;; *);
+=> nrel_interesting_fact: [Венера вращается вокруг оси в обратную сторону относительно большинства планет.](* <- lang_ru;; *);
+=> nrel_preceded: earth;;

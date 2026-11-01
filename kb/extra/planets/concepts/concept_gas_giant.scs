@@ -1,0 +1,14 @@
+concept_gas_giant
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+<- concept_planet;
+=> nrel_main_idtf:
+	[Газовый гигант]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Gas giant]
+	(* <- lang_en;; *);
+=> nrel_note: [планета, состоящая преимущественно из водорода и гелия, без твёрдой поверхности](* <- lang_ru;; *);
+<= nrel_inclusion: concept_planet;;
+

@@ -1,0 +1,9 @@
+sun
+<- concept_star;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Солнце](* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Sun](* <- lang_en;; *);
+=> nrel_note: [звезда спектрального класса G2V в центре Солнечной системы, вокруг которой обращаются планеты](* <- lang_ru;; *);
+=> nrel_interesting_fact: [На Солнце приходится около 99,86 % массы всей Солнечной системы.](* <- lang_ru;; *);;

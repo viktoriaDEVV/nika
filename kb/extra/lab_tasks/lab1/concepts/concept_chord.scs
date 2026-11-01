@@ -1,7 +1,0 @@
-concept_chord
-<- sc_node_class;
-=> nrel_main_idtf:
-	[хорда]
-	(* <- lang_ru;; *);
-	[chord]
-	(* <- lang_en;; *);;

@@ -1,0 +1,17 @@
+saturn
+<- concept_planet;
+<- concept_gas_giant;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Сатурн](* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Saturn](* <- lang_en;; *);
+=> nrel_note: [шестая планета от Солнца, газовый гигант, известный развитой системой колец](* <- lang_ru;; *);
+=> nrel_orbits: sun;
+=> nrel_belongs_to_system: solar_system;
+=> nrel_distance_from_sun: [9,58 а.е.](* <- lang_ru;; *);
+=> nrel_equatorial_diameter: [120536 км](* <- lang_ru;; *);
+=> nrel_number_of_satellites: [146];
+=> nrel_orbital_period: [29,5 года](* <- lang_ru;; *);
+=> nrel_interesting_fact: [Средняя плотность Сатурна меньше плотности воды: планета могла бы «плавать» в достаточно большом океане.](* <- lang_ru;; *);
+=> nrel_preceded: uranus;;

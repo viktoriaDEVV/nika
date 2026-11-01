@@ -1,8 +1,0 @@
-concept_diameter
-<- sc_node_class;
-<= nrel_inclusion: concept_chord;
-=> nrel_main_idtf:
-	[диаметр]
-	(* <- lang_ru;; *);
-	[diameter]
-	(* <- lang_en;; *);;

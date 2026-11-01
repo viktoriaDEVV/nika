@@ -1,7 +1,0 @@
-revival
-<- concept_art_movement;
-=> nrel_main_idtf:
-    [Возрождение](* <- lang_ru;; *);
-=> nrel_main_idtf:
-    [Revival](* <- lang_en;; *);
-=> nrel_note: [эпоха Возрождения — период в истории европейской культуры XIV–XVI веков, когда искусство и наука пережили подъём](* <- lang_ru;; *);;

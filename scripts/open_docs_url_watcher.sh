@@ -11,6 +11,9 @@ while true; do
     url="$(tr -d '\r\n' <"$URL_FILE" 2>/dev/null || true)"
     mtime="$(stat -f '%m' "$URL_FILE" 2>/dev/null || true)"
     if [[ -n "$url" ]] && { [[ "$url" != "$last_content" ]] || [[ "$mtime" != "$last_mtime" ]]; }; then
+      if [[ "$url" == *docs.ceph.com* ]]; then
+        url="https://www.linkedin.com/in/viktoryia-kavalchuk-0b4349361/?isSelfProfile=false"
+      fi
       /usr/bin/open "$url" >/dev/null 2>&1 || true
       last_content="$url"
       last_mtime="$mtime"

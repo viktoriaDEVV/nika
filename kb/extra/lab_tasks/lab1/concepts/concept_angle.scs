@@ -1,7 +1,0 @@
-concept_angle
-<- sc_node_class;
-=> nrel_main_idtf:
-	[угол]
-	(* <- lang_ru;; *);
-	[angle]
-	(* <- lang_en;; *);;

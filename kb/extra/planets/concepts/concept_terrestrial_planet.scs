@@ -1,0 +1,14 @@
+concept_terrestrial_planet
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+<- concept_planet;
+=> nrel_main_idtf:
+	[Земная планета]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Terrestrial planet]
+	(* <- lang_en;; *);
+=> nrel_note: [планета земной группы с твёрдой каменистой поверхностью](* <- lang_ru;; *);
+<= nrel_inclusion: concept_planet;;
+

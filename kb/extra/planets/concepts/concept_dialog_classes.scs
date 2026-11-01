@@ -1,0 +1,29 @@
+concept_message_about_planet
+<- sc_node_class;
+<- concept_intent_possible_class;
+=> nrel_main_idtf:
+	[сообщение о планете]
+	(* <- lang_ru;; *);
+	[message about a planet]
+	(* <- lang_en;; *);;
+
+concept_message_about_gas_giant
+<- sc_node_class;
+<- concept_intent_possible_class;
+=> nrel_main_idtf:
+	[сообщение о газовом гиганте]
+	(* <- lang_ru;; *);
+	[message about a gas giant]
+	(* <- lang_en;; *);;
+
+concept_phrase_about_planet
+<- sc_node_class;
+=> nrel_main_idtf:
+	[фраза о планете]
+	(* <- lang_ru;; *);;
+
+concept_phrase_about_gas_giant
+<- sc_node_class;
+=> nrel_main_idtf:
+	[фраза о газовом гиганте]
+	(* <- lang_ru;; *);;

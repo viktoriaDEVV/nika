@@ -1,0 +1,12 @@
+concept_star
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Звезда]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Star]
+	(* <- lang_en;; *);
+=> nrel_note: [массивный самосветящийся газовый шар, в недрах которого идут термоядерные реакции](* <- lang_ru;; *);;
+

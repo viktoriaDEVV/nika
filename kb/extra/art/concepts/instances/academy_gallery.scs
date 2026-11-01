@@ -1,7 +1,0 @@
-academy_gallery
-<- concept_gallery;
-=> nrel_main_idtf:
-    [Галерея Академии](* <- lang_ru;; *);
-=> nrel_main_idtf:
-    [Academy Gallery](* <- lang_en;; *);
-=> nrel_note: [музей во Флоренции, где хранится статуя «Давид» работы Микеланджело](* <- lang_ru;; *);;

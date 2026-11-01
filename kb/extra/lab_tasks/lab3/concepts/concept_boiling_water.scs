@@ -1,8 +1,0 @@
-concept_boiling_water
-<- sc_node_class;
-<= nrel_inclusion: concept_water;
-=> nrel_main_idtf:
-	[кипящая вода]
-	(* <- lang_ru;; *);
-	[boiling water]
-	(* <- lang_en;; *);;

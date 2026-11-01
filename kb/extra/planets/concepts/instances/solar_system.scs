@@ -1,0 +1,8 @@
+solar_system
+<- concept_solar_system;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Солнечная система](* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Solar System](* <- lang_en;; *);
+=> nrel_note: [гравитационно связанная система Солнца, восьми планет, карликовых планет, спутников, астероидов и комет](* <- lang_ru;; *);;

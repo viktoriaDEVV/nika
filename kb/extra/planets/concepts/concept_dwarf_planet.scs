@@ -1,0 +1,12 @@
+concept_dwarf_planet
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Карликовая планета]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Dwarf planet]
+	(* <- lang_en;; *);
+=> nrel_note: [тело, обращающееся вокруг Солнца, достаточно массивное для гидростатического равновесия, но не расчистившее окрестности орбиты](* <- lang_ru;; *);;
+

@@ -1,0 +1,12 @@
+concept_year
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Год]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Year]
+	(* <- lang_en;; *);
+=> nrel_note: [промежуток времени, за который планета совершает полный оборот вокруг звезды](* <- lang_ru;; *);;
+

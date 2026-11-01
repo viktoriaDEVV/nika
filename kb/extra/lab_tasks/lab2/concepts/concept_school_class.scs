@@ -1,8 +1,0 @@
-concept_school_class
-<- sc_node_class;
-<- concept_wit_entity;
-=> nrel_main_idtf:
-	[школьный класс]
-	(* <- lang_ru;; *);
-	[school class]
-	(* <- lang_en;; *);;

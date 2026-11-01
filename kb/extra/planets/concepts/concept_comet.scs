@@ -1,0 +1,12 @@
+concept_comet
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Комета]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Comet]
+	(* <- lang_en;; *);
+=> nrel_note: [малое ледяное тело, при сближении с Солнцем образующее кому и хвост](* <- lang_ru;; *);;
+
