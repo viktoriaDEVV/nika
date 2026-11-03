@@ -8,6 +8,7 @@
 
 #include <cstdlib>
 #include <fstream>
+#include <mutex>
 #include <string>
 
 using namespace openDocumentationModule;
@@ -16,6 +17,7 @@ using namespace scAgentsCommon;
 namespace
 {
 constexpr char const * URL_HANDOFF_PATH = "/home/nika/nika_cw/.last_open_documentation_url";
+constexpr char const * OPENED_DOCUMENTATION_MARKER = "concept_message_with_opened_documentation";
 }
 
 SC_AGENT_IMPLEMENTATION(OpenDocumentationAgent)
@@ -56,23 +58,47 @@ SC_AGENT_IMPLEMENTATION(OpenDocumentationAgent)
       "https://www.linkedin.com/in/viktoryia-kavalchuk-0b4349361/?isSelfProfile=false";
   SC_LOG_INFO("OpenDocumentationAgent: open url " << url);
 
+  // The knowledge base can trigger the same action for the same message more than once.
+  // Remember messages that already opened the URL so they are not reopened in a loop.
+  bool shouldOpen = true;
   {
-    std::ofstream urlFile(URL_HANDOFF_PATH, std::ios::trunc);
-    if (urlFile)
+    static std::mutex openDocumentationMutex;
+    std::lock_guard<std::mutex> lock(openDocumentationMutex);
+
+    ScAddr const & markerClass =
+        m_memoryCtx.HelperResolveSystemIdtf(OPENED_DOCUMENTATION_MARKER, ScType::NodeConstClass);
+
+    if (m_memoryCtx.HelperCheckEdge(markerClass, messageAddr, ScType::EdgeAccessConstPosPerm))
     {
-      urlFile << url << '\n';
+      shouldOpen = false;
     }
     else
     {
-      SC_LOG_WARNING("OpenDocumentationAgent: cannot write " << URL_HANDOFF_PATH);
+      std::ofstream urlFile(URL_HANDOFF_PATH, std::ios::trunc);
+      if (urlFile)
+      {
+        urlFile << url << '\n';
+      }
+      else
+      {
+        SC_LOG_WARNING("OpenDocumentationAgent: cannot write " << URL_HANDOFF_PATH);
+      }
+
+      m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, markerClass, messageAddr);
     }
   }
 
-
-  (void)std::system(("xdg-open \"" + url + "\" >/dev/null 2>&1 || true").c_str());
+  if (shouldOpen)
+  {
+    (void)std::system(("xdg-open \"" + url + "\" >/dev/null 2>&1 || true").c_str());
+    SC_LOG_INFO("OpenDocumentationAgent finished");
+  }
+  else
+  {
+    SC_LOG_INFO("OpenDocumentationAgent: url is already opened for this message, skipping");
+  }
 
   utils::AgentUtils::finishAgentWork(&m_memoryCtx, actionAddr, true);
-  SC_LOG_INFO("OpenDocumentationAgent finished");
   return SC_RESULT_OK;
 }
 
