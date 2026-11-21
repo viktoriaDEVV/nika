@@ -1,0 +1,9 @@
+nrel_mass
+  <- sc_node_norole_relation;
+  <- relation;
+  => nrel_main_idtf: [масса*] (* <- lang_ru;; *);;
+
+nrel_density
+  <- sc_node_norole_relation;
+  <- relation;
+  => nrel_main_idtf: [плотность*] (* <- lang_ru;; *);;

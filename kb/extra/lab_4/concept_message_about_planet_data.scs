@@ -1,0 +1,3 @@
+concept_message_about_planet_data
+  <- sc_node_class;
+  => nrel_main_idtf: [сообщение о загрузке данных о планетах] (* <- lang_ru;; *);;

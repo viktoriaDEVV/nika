@@ -1,0 +1,10 @@
+[
+  {"idtf": "mercury", "name": "Меркурий", "distance_au": 0.39, "diameter_km": 4879, "mass_kg": 3.301e23, "satellites": 0},
+  {"idtf": "venus",   "name": "Венера",   "distance_au": 0.72, "diameter_km": 12104, "mass_kg": 4.867e24, "satellites": 0},
+  {"idtf": "earth",   "name": "Земля",    "distance_au": 1.00, "diameter_km": 12756, "mass_kg": 5.972e24, "satellites": 1},
+  {"idtf": "mars",    "name": "Марс",     "distance_au": 1.52, "diameter_km": 6792,  "mass_kg": 6.417e23, "satellites": 2},
+  {"idtf": "jupiter", "name": "Юпитер",   "distance_au": 5.20, "diameter_km": 142984, "mass_kg": 1.898e27, "satellites": 95},
+  {"idtf": "saturn",  "name": "Сатурн",   "distance_au": 9.58, "diameter_km": 120536, "mass_kg": 5.683e26, "satellites": 146},
+  {"idtf": "uranus",  "name": "Уран",     "distance_au": 19.2, "diameter_km": 51118, "mass_kg": 8.681e25, "satellites": 28},
+  {"idtf": "neptune", "name": "Нептун",   "distance_au": 30.1, "diameter_km": 49528, "mass_kg": 1.024e26, "satellites": 16}
+]
