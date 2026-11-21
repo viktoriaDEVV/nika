@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+<staticSector>
+<contour type="contour/const/perm" idtf="" shapeColor="0" id="1000000000001" parent="0"><points><point x="0" y="0"/><point x="100" y="0"/><point x="100" y="100"/><point x="0" y="100"/></points></contour>
+<contour type="contour/const/perm" idtf="" shapeColor="0" id="1000000000002" parent="0"><points><point x="0" y="0"/><point x="100" y="0"/><point x="100" y="100"/><point x="0" y="100"/></points></contour>
+<node type="node/var/perm/general" idtf="_lr3_rss_message" shapeColor="0" id="1000000000003" parent="1000000000001" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/var/perm/general" idtf="_lr3_rss_entity" shapeColor="0" id="1000000000004" parent="1000000000001" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/var/perm/general" idtf="_lr3_rss_reply_message" shapeColor="0" id="1000000000005" parent="1000000000002" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/var/perm/general" idtf="_lr3_rss_message" shapeColor="0" id="1000000000006" parent="1000000000002" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/group" idtf="concept_message" shapeColor="0" id="1000000000007" parent="1000000000001" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/group" idtf="concept_message_about_entity" shapeColor="0" id="1000000000008" parent="1000000000001" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/role" idtf="rrel_entity" shapeColor="0" id="1000000000009" parent="1000000000001" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000010" parent="1000000000001" id_b="1000000000007" id_e="1000000000003" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000011" parent="1000000000001" id_b="1000000000008" id_e="1000000000003" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<node type="node/const/perm/general" idtf="concept_solar_system" shapeColor="0" id="1000000000012" parent="1000000000001" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000013" parent="1000000000001" id_b="1000000000003" id_e="1000000000012" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000014" parent="1000000000001" id_b="1000000000009" id_e="1000000000013" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<node type="node/const/perm/group" idtf="concept_message_about_solar_system" shapeColor="0" id="1000000000015" parent="1000000000002" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/group" idtf="concept_atomic_message" shapeColor="0" id="1000000000016" parent="1000000000002" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/relation" idtf="nrel_reply" shapeColor="0" id="1000000000017" parent="1000000000002" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000018" parent="1000000000002" id_b="1000000000015" id_e="1000000000005" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000019" parent="1000000000002" id_b="1000000000016" id_e="1000000000005" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/var/-/perm/orient" idtf="" shapeColor="0" id="1000000000020" parent="1000000000002" id_b="1000000000006" id_e="1000000000005" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000021" parent="1000000000002" id_b="1000000000017" id_e="1000000000020" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<node type="node/const/perm/general" idtf="lr_message_about_solar_system" shapeColor="0" id="1000000000022" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/group" idtf="atomic_logical_formula" shapeColor="0" id="1000000000023" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/relation" idtf="nrel_implication" shapeColor="0" id="1000000000024" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/role" idtf="rrel_main_key_sc_element" shapeColor="0" id="1000000000025" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/group" idtf="concept_answer_on_standard_message_rule" shapeColor="0" id="1000000000026" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/group" idtf="concept_answer_on_standard_message_rule_priority_1" shapeColor="0" id="1000000000027" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/relation" idtf="nrel_answer_pattern" shapeColor="0" id="1000000000028" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/role" idtf="rrel_1" shapeColor="0" id="1000000000029" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/tuple" idtf="" shapeColor="0" id="1000000000030" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<node type="node/const/perm/group" idtf="concept_phrase_about_solar_system" shapeColor="0" id="1000000000031" parent="0" left="0" top="0" right="0" bottom="0" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="0" y="0" haveBus="false" idtf_pos="0">
+<content type="0" mime_type="" content_visibility="false" file_name=""/>
+</node>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000032" parent="0" id_b="1000000000023" id_e="1000000000001" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000033" parent="0" id_b="1000000000023" id_e="1000000000002" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="1000000000034" parent="0" id_b="1000000000001" id_e="1000000000002" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000035" parent="0" id_b="1000000000022" id_e="1000000000034" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000036" parent="0" id_b="1000000000024" id_e="1000000000034" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000037" parent="0" id_b="1000000000025" id_e="1000000000035" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000038" parent="0" id_b="1000000000026" id_e="1000000000022" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000039" parent="0" id_b="1000000000027" id_e="1000000000022" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="1000000000040" parent="0" id_b="1000000000022" id_e="1000000000030" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000041" parent="0" id_b="1000000000028" id_e="1000000000040" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000042" parent="0" id_b="1000000000030" id_e="1000000000031" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+<pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="1000000000043" parent="0" id_b="1000000000029" id_e="1000000000042" b_x="0" b_y="0" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0"><points/></pair>
+</staticSector>
+</GWF>

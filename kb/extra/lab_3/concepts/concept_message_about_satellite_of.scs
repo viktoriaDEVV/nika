@@ -1,0 +1,7 @@
+concept_message_about_satellite_of
+  <- sc_node_class;
+  => nrel_main_idtf: [сообщение о спутнике планеты] (* <- lang_ru;; *);;
+
+concept_message_about_preceded
+  <- sc_node_class;
+  => nrel_main_idtf: [сообщение о предшествующей планете на орбите] (* <- lang_ru;; *);;
