@@ -8,6 +8,7 @@ services:
     restart: unless-stopped
     ports:
       - "8000:8000"
+      - "8080:8000"
     expose:
       - 8000
     networks:
@@ -61,7 +62,6 @@ services:
     restart: unless-stopped
     ports:
       - "3033:8080"
-      - "8080:8080"
     networks:
       - nika
     environment:
