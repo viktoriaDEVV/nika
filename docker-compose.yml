@@ -61,6 +61,7 @@ services:
     restart: unless-stopped
     ports:
       - "3033:8080"
+      - "8080:8080"
     networks:
       - nika
     environment:
